@@ -1,15 +1,82 @@
 ---
 ---
 
-<Button>Tilmeld dig</Button>
+<button class="Primary">Tilmeld hold</button>
+<button class="Secundary">Stilarter</button>
 
 <style>
-  display: flex;
-  width: 221px;
-  min-width: 100px;
-  padding: 15px 30px;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  /* ----- Primary button ----- */
+
+  .Primary {
+    border-style: none;
+    display: inline-flex;
+    min-width: 6.25rem;
+    padding: var(--button-spacing-verticalt, 1rem)
+      var(--button-spacing-horisontalt, 5rem);
+    align-items: center;
+    align-content: center;
+    gap: 1rem var(--primitive-spacing-xs, 1rem);
+    flex-wrap: wrap;
+    border-radius: var(--Border-radius, 0.625rem);
+    background: var(--buttons-primary-background, #ffdf4c);
+    /* Paragraf */
+    color: var(--buttons-primary-text, #090a0a);
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .Primary:hover {
+    min-width: 6.25rem;
+    padding: var(--primitive-spacing-xs, 1rem) var(--primitive-spacing-m, 5rem);
+    align-items: center;
+    align-content: center;
+    gap: var(--primitive-spacing-xs, 1rem);
+    flex-wrap: wrap;
+    border-radius: var(--Border-radius, 0.625rem);
+    border: 1px solid var(--buttons-primary-border, #ffdf4c);
+    color: var(--buttons-primary-text-hover, #ffdf4c);
+    text-align: center;
+    /* Paragraf */
+    font-family: Noto Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  /* ----- Secundary button ----- */
+  .Secundary {
+    border-style: none;
+    padding: var(--button-spacing-verticalt, 1rem)
+      var(--button-spacing-horisontalt, 5rem);
+    align-items: center;
+    align-content: center;
+    gap: var(--primitive-spacing-xs, 1rem);
+    flex-wrap: wrap;
+    border-radius: var(--Border-radius, 0.625rem);
+    background: var(--buttons-secondary-button-background, #176672);
+    /* Paragraf*/
+    color: var(--buttons-secondary-button-text, #efefef);
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .Secundary:hover {
+    min-width: 6.25rem;
+    padding: var(--primitive-spacing-xs, 1rem) var(--primitive-spacing-m, 5rem);
+    align-items: center;
+    align-content: center;
+    gap: 1rem var(--primitive-spacing-xs, 1rem);
+    flex-wrap: wrap;
+    border-radius: var(--Border-radius, 0.625rem);
+    border: 1px solid var(--buttons-secondary-button-border, #176672);
+    /* Paragraf */
+  }
 </style>
