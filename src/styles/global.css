@@ -1,0 +1,82 @@
+/* VARIABLE COLLECTIONS FRA FIGMA */
+
+/* ------ PRIMITIVE VARIABLER -------- */
+
+/* Color */
+
+:root {
+  --asur-blue-900: #176672;
+  --black-900: #090a0a;
+  --dark-grey-900: #4b4645;
+  --light-grey-100: #efefef;
+  --yellow-900: #ffdf4c;
+}
+
+/* Spacing  */
+:root {
+  --primitive-spacing-xs: 1rem;
+  --primitive-spacing-s: 3rem;
+  --primitive-spacing-m: 5rem;
+  --primitive-spacing-l: 6.25rem;
+  --primitive-spacing-xl: 12.5rem;
+  --primitive-spacing-xxl: 18.75rem;
+}
+
+/* ------- SEMANTISKE VARIABLER  ---------- */
+
+/* ------Buttons color---------*/
+:root {
+  --buttons-cards-background: var(--black-900);
+  --buttons-cards-hover-border: var(--yellow-900);
+  --buttons-cards-hover-text: var(--yellow-900);
+  --buttons-cards-text: var(--light-grey-100);
+  /* Primary  */
+  --buttons-primary-background: var(--yellow-900);
+  --buttons-primary-border: var(--yellow-900);
+  --buttons-primary-text: var(--black-900);
+  --buttons-primary-text-hover: var(--yellow-900);
+  /* Secudanry */
+  --buttons-secondary-button-background: var(--asur-blue-900);
+  --buttons-secondary-button-border: var(--asur-blue-900);
+  --buttons-secondary-button-text: var(--light-grey-100);
+}
+
+/*------- Button spacing --------*/
+:root {
+  --button-spacing-verticalt: var(--primitive-spacing-xs);
+  --button-spacing-horisontalt: var(--primitive-spacing-m);
+  /* --button-small: 1rem;
+  --button-medium: 1.5rem;
+  --button-large: 2rem; */
+}
+/* Cards */
+
+:root {
+  --cards-background: var(--dark-grey-900);
+  --cards-border: var(--yellow-900);
+  --cards-label-color: var(--yellow-900);
+  --cards-text: var(--light-grey-100);
+}
+
+/* Sections */
+
+:root {
+  --section-background-black: var(--black-900);
+  --section-background-dark-grey: var(--dark-grey-900);
+  --section-background-light-grey: var(--light-grey-100);
+}
+
+/* Typografi */
+:root {
+  --headers-color: var(--light-grey-100);
+  --headers-color-black: var(--black-900);
+  --paragraph-color-black: var(--black-900);
+  --paragraph-color-darkgrey: var(--dark-grey-900);
+  --paragraph-color-lightgrey: var(--light-grey-100);
+}
+
+/* -------- Border-radius -------- */
+
+:root {
+  --border-radius: 0.625rem;
+}
