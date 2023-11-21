@@ -1,0 +1,33 @@
+---
+---
+
+<button class="Secundary">Undervisere</button>
+
+<style>
+  /* ----- Secundary button ----- */
+  .Secundary {
+    background-color: transparent;
+    border: 1px solid var(--buttons-secondary-border, #176672);
+    padding: var(--button-spacing-verticalt, 1rem)
+      var(--button-spacing-horisontalt, 5rem);
+
+    max-width: fit-content;
+    gap: 1rem var(--primitive-spacing-xs, 1rem);
+    flex-wrap: wrap;
+    border-radius: var(--Border-radius, 0.625rem);
+    /* Paragraf*/
+    color: var(--secondary-button-text, #efefef);
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .Secundary:hover {
+    border-style: none;
+    background: var(--secundary-button-background, #176672);
+    border-radius: var(--Border-radius, 0.625rem);
+  }
+</style>

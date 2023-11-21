@@ -36,9 +36,9 @@
   --buttons-primary-text: var(--black-900);
   --buttons-primary-text-hover: var(--yellow-900);
   /* Secudanry */
-  --buttons-secondary-button-background: var(--asur-blue-900);
-  --buttons-secondary-button-border: var(--asur-blue-900);
-  --buttons-secondary-button-text: var(--light-grey-100);
+  --secondary-button-background: var(--asur-blue-900);
+  --secondary-button-border: var(--asur-blue-900);
+  --secondary-button-text: var(--light-grey-100);
 }
 
 /*------- Button spacing --------*/
@@ -64,6 +64,8 @@
   --section-background-black: var(--black-900);
   --section-background-dark-grey: var(--dark-grey-900);
   --section-background-light-grey: var(--light-grey-100);
+  --section-yellow-slide-background: var(--yellow-900);
+  --section-blue-slide-background: var(--asur-blue-900);
 }
 
 /* Typografi */

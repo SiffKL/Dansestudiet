@@ -1,23 +1,25 @@
 ---
-import Button from "../components/Button.astro";
+import ButtonTertiary from "../components/ButtonTertiary.astro";
 ---
 
 <section>
-  <h2>Tilmeld dig næste sæsson</h2>
-  <p>
-    Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    Curabitur tempus urna at turpis condimentum lobortis.
-  </p>
-
-  <Button />
+  <div class="content">
+    <h2>Tilmeld dig næste sæsson</h2>
+    <p>
+      Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+      libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
+      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      Curabitur tempus urna at turpis condimentum lobortis.
+    </p>
+    <ButtonTertiary />
+  </div>
 </section>
 
 <style>
-  section {
-    background-color: ;
-    width: ;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h2 {
@@ -31,9 +33,16 @@ import Button from "../components/Button.astro";
     font-family: Noto Sans;
     font-size: 1.25rem;
     font-weight: 400;
+    max-width: 37.5rem;
   }
 
   section {
     background-color: var(--DarkGrey-900, #4b4645);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    max-height: fit-content;
+    padding-top: var(--primitive-spacing-l, 6.25rem);
+    padding-bottom: var(--primitive-spacing-l, 6.25rem);
   }
 </style>
