@@ -1,0 +1,92 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<section>
+  <div class="border"></div>
+  <div class="WSimg"></div>
+  <h2>Camilla P.</h2>
+  <div class="Cardinfo">
+    <h4>Søndag d. 10 December</h4>
+    <p>
+      Anna Zacho, medstifter af “The Edge Dance Space”, kommer hjem fra London
+      for at give en Commercial Performance workshop med lækker energi. Lad os
+      danse sammen til den sidste MW i år.
+    </p>
+    <Button />
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--section-background-light-grey, #efefef);
+    position: relative;
+    max-width: 100%;
+  }
+  .WSimg {
+    width: 100%;
+    height: 40rem;
+    background-image: url(../asset/images/WorkshopFoto1.webp);
+    z-index: 0;
+    position: relative;
+  }
+
+  .WSimg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    );
+    z-index: 1;
+  }
+  h2 {
+    z-index: 1;
+    position: absolute;
+    color: var(--Yellow-900, #ffdf4c);
+    font-family: Dansestudiet Simple;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .Cardinfo {
+    display: flex;
+    width: 32.5625rem;
+    /* height: 22.875rem; */
+    padding: var(--primitive-spacing-s, 3rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--primitive-spacing-xs, 1rem);
+    background: var(--section-background-light-grey, #efefef);
+  }
+
+  h4 {
+    color: var(--buttons-primary-text, #090a0a);
+    font-family: Noto Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .border {
+    width: 27rem;
+    height: 37rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    border: 1px solid var(--Yellow-900, #ffdf4c);
+    position: absolute;
+    z-index: 2;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
