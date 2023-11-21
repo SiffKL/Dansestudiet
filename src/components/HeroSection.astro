@@ -6,8 +6,7 @@ import ButtonSecundary from "./ButtonSecundary.astro";
 <section class="gridcontainer">
   <section class="section1">
     <h1>Dansestudiet</h1>
-    <img src="../asset/images/heroPic.webp" alt="" />
-    <!-- Hvorfor kommer billedet ikke ind? -->
+
     <Button />
     <ButtonSecundary />
   </section>
@@ -31,7 +30,10 @@ import ButtonSecundary from "./ButtonSecundary.astro";
   }
 
   .section1 {
-    grid-column: 70%;
+    background-image: url("../asset/images/heroPic.webp");
+    background-position: center;
+    background-size: cover;
+    background-color: var(--black-900, #090a0a);
   }
 
   .section2 {
