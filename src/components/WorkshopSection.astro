@@ -1,34 +1,26 @@
 ---
 import WSCard from "./WSCard.astro";
+import WSCard2 from "./WSCard2.astro";
 ---
 
 <section>
   <div class="fill100">
     <h1>Denne måneds workshop</h1>
   </div>
-  <div class="fill100">
+  <div class="fillCards">
     <div class="fill50"><WSCard /></div>
-
-    <div class="fill50"><WSCard /></div>
+    <div class="fill50"><WSCard2 /></div>
   </div>
 </section>
 
 <style>
   section {
-    /* display: flex; */
     width: 100vw;
     height: 100rem;
-    /* justify-content: center;
-    align-items: center;
-    align-content: center; */
-    /* gap: 2.875rem 5.625rem; */
-    /* flex-shrink: 0;
-    flex-wrap: wrap; */
     background: var(--section-background-light-grey, #efefef);
   }
 
   h1 {
-    /* display: inline-block; */
     width: 47.6875rem;
     height: 8.0625rem;
     color: #176672;
@@ -36,18 +28,25 @@ import WSCard from "./WSCard.astro";
     font-size: 5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 4.9625rem; /* 99.25% */
+    line-height: 4.9625rem;
   }
 
   .fill100 {
-    width: 100vw;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     padding-left: var(--primitive-spacing-s, 3rem);
   }
 
+  .fillCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--primitive-spacing-m, 5rem);
+  }
+
   .fill50 {
-    width: 50%;
+    width: 40%;
   }
 </style>

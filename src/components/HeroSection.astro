@@ -5,13 +5,13 @@ import ButtonSecundary from "./ButtonSecundary.astro";
 
 <section class="gridcontainer">
   <section class="section1">
-    <h1>Dansestudiet</h1>
+    <h1>Danseferie</h1>
 
     <Button />
     <ButtonSecundary />
   </section>
-  <section class="section2"></section>
-  <section class="section3"></section>
+  <section class="section2"><h2>Moderne</h2></section>
+  <section class="section3"><h2>House</h2></section>
 </section>
 
 <style>
@@ -20,6 +20,12 @@ import ButtonSecundary from "./ButtonSecundary.astro";
     font-family: DansestudietDisplay1;
     font-size: 6.25rem;
     font-weight: 700;
+  }
+
+  h2 {
+    color: var(--headers-color, --light-grey-100);
+    font-family: DansestudietDisplay1;
+    font-size: 2rem;
   }
 
   .gridcontainer {
@@ -36,15 +42,37 @@ import ButtonSecundary from "./ButtonSecundary.astro";
   }
 
   .section2 {
-    /* grid-column: 15%; */
+    position: relative;
     background-color: var(--section-yellow-slide-background, #ffdf4c);
     background-image: url("../asset/images/yellowslide.webp");
   }
 
+  .section2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+  }
+
   .section3 {
-    /* grid-column: 15%; */
+    position: relative;
     background-color: var(--section-blue-slide-background, #176672);
     background-image: url("../asset/images/blueslide.webp");
     background-size: cover;
+  }
+
+  .section3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    z-index: 1;
   }
 </style>
