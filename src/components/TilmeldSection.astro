@@ -49,4 +49,17 @@ import ButtonTertiary from "../components/ButtonTertiary.astro";
     padding-top: var(--primitive-spacing-l, 6.25rem);
     padding-bottom: var(--primitive-spacing-l, 6.25rem);
   }
+
+  @media (max-width: 1200px) {
+    .content {
+      padding: 0 var(--primitive-spacing-s, 3rem); /* Adjusted padding for mobile view */
+    }
+
+    p {
+      max-width: 100%; /* Adjusted max-width for mobile view */
+      text-align: center; /* Center align for mobile view */
+    }
+
+}
+
 </style>

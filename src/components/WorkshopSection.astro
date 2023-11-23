@@ -50,4 +50,23 @@ import WSCard2 from "./WSCard2.astro";
   .fill50 {
     width: 40%;
   }
+
+  @media (max-width: 1200px) {
+    h1 { 
+      position: relative;
+      transform: scale(0.6);
+      left: -130px; 
+    }
+
+    .fill100 {
+      width: 100%; /* Adjusted width for mobile view */
+    }
+
+    .fill50 {
+      width: 100%; /* Adjusted width for mobile view */
+      padding: 0 var(--primitive-spacing-s, 3rem); /* Added padding for mobile view */
+    }
+  }
+
+
 </style>
