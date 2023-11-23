@@ -22,6 +22,15 @@
   --primitive-spacing-xxl: 18.75rem;
 }
 
+/* Font Size  */
+:root {
+  --fontsize-xs: 16px;
+  --fontsize-s: 24px;
+  --fontsize-m: 32px;
+  --fontsize-l: 48px;
+  --fontsize-xl: 80px;
+  --fontsize-xxl: 100px;
+}
 /* ------- SEMANTISKE VARIABLER  ---------- */
 
 /* ------Buttons color---------*/
@@ -42,14 +51,13 @@
 }
 
 /*------- Button spacing --------*/
+
 :root {
   --button-spacing-verticalt: var(--primitive-spacing-xs);
   --button-spacing-horisontalt: var(--primitive-spacing-m);
-  /* --button-small: 1rem;
-  --button-medium: 1.5rem;
-  --button-large: 2rem; */
 }
-/* Cards */
+
+/* ------------ Cards ------------------*/
 
 :root {
   --cards-background: var(--dark-grey-900);
@@ -58,7 +66,7 @@
   --cards-text: var(--light-grey-100);
 }
 
-/* Sections */
+/* ----------- Sections -------------  */
 
 :root {
   --section-background-black: var(--black-900);
@@ -68,13 +76,24 @@
   --section-blue-slide-background: var(--asur-blue-900);
 }
 
-/* Typografi */
+/* --------- Typografi  -------------*/
 :root {
   --headers-color: var(--light-grey-100);
   --headers-color-black: var(--black-900);
   --paragraph-color-black: var(--black-900);
   --paragraph-color-darkgrey: var(--dark-grey-900);
   --paragraph-color-lightgrey: var(--light-grey-100);
+  --text-margin-button: var(--primitive-spacing-xs);
+  --text-margin-top: var(--primitive-spacing-s);
+}
+
+:root {
+  --paragraph-size-16: var(--fontsize-xs);
+  --paragraph-size-24: var(--fontsize-s);
+  --paragraph-size-32: var(--fontsize-m);
+  --manchet-size-48: var(--fontsize-l);
+  --header-size-80: var(--fontsize-xl);
+  --header-100: var(--fontsize-xxl);
 }
 
 /* -------- Border-radius -------- */

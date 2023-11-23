@@ -27,18 +27,19 @@ import ButtonTertiary from "../components/ButtonTertiary.astro";
     font-family: DansestudietDisplay1;
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: var(--text-margin-button, --primitive-spacing-xs);
   }
   p {
-    color: #fff;
+    color: var(--paragraph-color-lightgrey, --light-grey-100);
     font-family: Noto Sans;
-    font-size: 1.25rem;
+    font-size: var(--paragraph-size-24, --fontsize-s);
     font-weight: 400;
     max-width: 37.5rem;
   }
 
   section {
     background-color: var(--DarkGrey-900, #4b4645);
-    width: 100%;
+    width: 100vw;
     display: grid;
     justify-content: center;
     max-height: fit-content;
