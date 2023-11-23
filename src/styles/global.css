@@ -101,3 +101,10 @@
 :root {
   --border-radius: 0.625rem;
 }
+
+@font-face {
+  font-family: "DesignstudietDisplay";
+  src: url("../fonte/DansestudietDisplay1-Bold.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
