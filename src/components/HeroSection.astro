@@ -3,22 +3,19 @@ import Button from "../components/Button.astro";
 import ButtonSecundary from "./ButtonSecundary.astro";
 ---
 
-<div class="container">
   <section class="gridcontainer">
     <section class="section1">
-      <div class="backgroundimg"></div>
-      <div class="H1-CTA">
+            <div class="H1-CTA">
         <h1>Dansestudiet</h1>
 
         <Button />
         <ButtonSecundary />
+        <h2 class="h2Section1">Jazz</h2>
       </div>
-      <h2 class="h2Section1">Jazz</h2>
     </section>
     <section class="section2"><h2>Moderne</h2></section>
     <section class="section3"><h2>House</h2></section>
   </section>
-</div>
 
 <style>
   /* .backgroundimg {
@@ -40,7 +37,7 @@ import ButtonSecundary from "./ButtonSecundary.astro";
   }
   .H1-CTA {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 20%;
   }
   h2 {
@@ -56,8 +53,8 @@ import ButtonSecundary from "./ButtonSecundary.astro";
     font-family: DansestudietDisplay1;
     font-size: 2rem;
     /* position: absolute; */
-    top: 80%;
-    left: 80%;
+    top: 10%;
+    left: 90%;
   }
 
   .gridcontainer {
@@ -69,15 +66,11 @@ import ButtonSecundary from "./ButtonSecundary.astro";
   }
 
   .section1 {
-    width: 1314px;
-    position: relative;
-    background-image: url("../asset/images/heroPic.webp");
-    background-size: 70%;
-    top: 0%;
-    left: ;
-    background-position: top;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+  position: relative;
+  background-image: url("../asset/images/heroPic.webp");
+  background-repeat: no-repeat;
+  background-size: contain; /* Adjust the value here */
+  top: -100px;
   }
 
   .section2 {
@@ -116,6 +109,35 @@ import ButtonSecundary from "./ButtonSecundary.astro";
     z-index: 1;
   }
 
-  @media {
+
+    @media (max-width: 1200px) {
+
+  .section2,.section3 {
+    display: none; 
   }
+
+  .section1 {
+  position: relative;
+  background-image: url("../asset/images/heroPic.webp");
+  background-size: ;
+  width: 100%;
+  transform: scale(0.6); /* Reduce the size to 50% */
+  left: -50px;
+  }
+
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .H1-CTA {
+  position: relative;
+  left: 0;
+}
+.h2Section1 {
+    display: none;
+  }
+
+}
+
 </style>
