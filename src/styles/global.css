@@ -109,3 +109,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+p,
+button {
+  font-family: helvetica;
+  line-height: 1.5;
+  font-weight: 300;
+}

@@ -4,7 +4,7 @@ import ButtonTertiary from "../components/ButtonTertiary.astro";
 
 <section>
   <div class="content">
-    <h2>Tilmeld til forårssæsson 2024</h2>
+    <h2>Tilmelding til <br />forårssæsson 2024</h2>
 
     <p>
       Tilmelding til efterårssæsonen 2023 er fortsat åben. <br /><br
@@ -13,53 +13,62 @@ import ButtonTertiary from "../components/ButtonTertiary.astro";
       Fusion Contemporary, Yoga, Waacking, Workshops m.m. Vi har mere end 50
       danseklasser om ugen for alle aldre og niveauer.
     </p>
-    <ButtonTertiary />
+    <div class="butcenter"><ButtonTertiary /></div>
   </div>
-</section>
 
-<style>
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h2 {
-    color: var(--paragraph-color-lightgrey, #efefef);
-    font-family: DansestudietDisplay1;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: var(--text-margin-button, --primitive-spacing-xs);
-  }
-  p {
-    color: var(--paragraph-color-lightgrey, --light-grey-100);
-    font-family: Noto Sans;
-    font-size: var(--paragraph-size-24, --fontsize-s);
-    font-weight: 400;
-    max-width: 37.5rem;
-    text-align: start;
-  }
-
-  section {
-    background-color: var(--DarkGrey-900, #4b4645);
-    width: 100vw;
-    display: grid;
-    justify-content: center;
-    max-height: fit-content;
-    padding-top: var(--primitive-spacing-l, 6.25rem);
-    padding-bottom: var(--primitive-spacing-l, 6.25rem);
-  }
-
-  @media (max-width: 1200px) {
+  <style>
     .content {
-      padding: 0 var(--primitive-spacing-s, 3rem); /* Adjusted padding for mobile view */
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      max-width: 40rem;
+    }
+    .butcenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    h2 {
+      color: var(--paragraph-color-lightgrey, #efefef);
+      font-family: DansestudietDisplay1;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: var(--text-margin-button, --primitive-spacing-xs);
+    }
     p {
-      max-width: 100%; /* Adjusted max-width for mobile view */
-      text-align: center; /* Center align for mobile view */
+      color: var(--paragraph-color-lightgrey, --light-grey-100);
+      font-family: Noto Sans;
+      font-size: var(--paragraph-size-24, --fontsize-s);
+      font-weight: 400;
+      /* max-width: 40rem; */
+      text-align: start;
     }
 
-}
+    section {
+      background-color: var(--DarkGrey-900, #4b4645);
+      width: 100vw;
+      display: grid;
+      justify-content: center;
+      max-height: fit-content;
+      padding-top: var(--primitive-spacing-l, 6.25rem);
+      padding-bottom: var(--primitive-spacing-l, 6.25rem);
+    }
 
-</style>
+    @media (max-width: 1200px) {
+      .content {
+        padding: var(
+          --primitive-spacing-s,
+          3rem
+        ); /* Adjusted padding for mobile view */
+      }
+
+      p {
+        max-width: 100%; /* Adjusted max-width for mobile view */
+        text-align: left; /* Center align for mobile view */
+        /* transform: scale(0.8); */
+        font-size: var(--paragraph-size-16, --fontsize-xs);
+      }
+    }
+  </style>
+</section>
