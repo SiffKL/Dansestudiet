@@ -85,6 +85,7 @@
   --paragraph-color-lightgrey: var(--light-grey-100);
   --text-margin-button: var(--primitive-spacing-xs);
   --text-margin-top: var(--primitive-spacing-s);
+  --lineheight-header: var(--primitive-spacing-m);
 }
 
 :root {

@@ -3,29 +3,34 @@ import Button from "../components/Button.astro";
 import ButtonSecundary from "./ButtonSecundary.astro";
 ---
 
-<section class="gridcontainer">
-  <section class="section1">
-    <div class="backgroundimg"></div>
-    <div class="H1-CTA">
-      <h1>Dansestudiet</h1>
+<div class="container">
+  <section class="gridcontainer">
+    <section class="section1">
+      <div class="backgroundimg"></div>
+      <div class="H1-CTA">
+        <h1>Dansestudiet</h1>
 
-      <Button />
-      <ButtonSecundary />
-    </div>
-    <h2 class="h2Section1">Jazz</h2>
+        <Button />
+        <ButtonSecundary />
+      </div>
+      <h2 class="h2Section1">Jazz</h2>
+    </section>
+    <section class="section2"><h2>Moderne</h2></section>
+    <section class="section3"><h2>House</h2></section>
   </section>
-  <section class="section2"><h2>Moderne</h2></section>
-  <section class="section3"><h2>House</h2></section>
-</section>
+</div>
 
 <style>
-  .backgroundimg {
+  /* .backgroundimg {
+    position: relative;
     background-image: url("../asset/images/heroPic.webp");
-    position: absolute;
+
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
+
   h1 {
     color: var(--headers-color, --light-grey-100);
     font-family: DansestudietDisplay1;
@@ -35,7 +40,7 @@ import ButtonSecundary from "./ButtonSecundary.astro";
   }
   .H1-CTA {
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 20%;
   }
   h2 {
@@ -50,23 +55,29 @@ import ButtonSecundary from "./ButtonSecundary.astro";
     color: var(--headers-color, --light-grey-100);
     font-family: DansestudietDisplay1;
     font-size: 2rem;
-    position: absolute;
-
+    /* position: absolute; */
     top: 80%;
     left: 80%;
   }
 
   .gridcontainer {
     height: 100vh;
-    width: 100vw;
     display: grid;
     grid-template-columns: 70% 15% 15%;
     grid-auto-flow: column;
+    margin: 0 auto;
   }
 
   .section1 {
-    width: 100%;
+    width: 1314px;
     position: relative;
+    background-image: url("../asset/images/heroPic.webp");
+    background-size: 70%;
+    top: 0%;
+    left: ;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
   }
 
   .section2 {
@@ -103,5 +114,8 @@ import ButtonSecundary from "./ButtonSecundary.astro";
     height: 100%;
     background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     z-index: 1;
+  }
+
+  @media {
   }
 </style>
